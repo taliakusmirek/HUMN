@@ -3,19 +3,76 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --logo-green: #FBFB23;
+  --logo-purple: #433CE3;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  /* Remove solid background-color */
+  /* background-color: var(--logo-green); */
+  background: linear-gradient(to bottom, #433CE3 0%, #FBFB23 20%, #FBFB23 100%);
+  color: var(--logo-purple);
+  overflow-x: hidden;
 }
+
+.content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-text {
+  font-size: clamp(2rem, 5vw, 4rem);
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.interactive-element {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.interactive-element:hover {
+  transform: scale(1.05);
+}
+
+.nav-underline {
+  position: relative;
+  text-decoration: none;
+}
+.nav-underline::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background: #FBFB23;
+  transition: width 0.3s cubic-bezier(0.4,0,0.2,1);
+}
+.nav-underline:hover::after, .nav-underline:focus::after {
+  width: 100%;
+}
+
+.no-scrollbar {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome/Safari/Webkit */
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.animate-marquee {
+  animation: marquee 32s linear infinite;
+} 
