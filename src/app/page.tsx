@@ -56,6 +56,7 @@ export default function Home() {
               boxShadow: '0 0 32px 8px #FBFB23, 0 0 0 2px #FBFB23 inset',
               textShadow: '0 0 8px #FBFB23',
             }}
+            onClick={() => {window.open('https://tally.so/r/n9yXyX', '_blank')}}
           >
             → Join the Waitlist
           </motion.button>
@@ -63,7 +64,7 @@ export default function Home() {
       </section>
 
       {/* Partner marquee section with names instead of images */}
-      <section className="w-full flex justify-center items-center min-h-[120px] bg-transparent overflow-hidden">
+      <section className="w-full flex justify-center items-center min-h-[120px] bg-transparent overflow-hidden hidden">
         <div className="relative w-full max-w-6xl mx-auto">
           <div className="marquee flex items-center gap-16 w-max animate-marquee">
             {['OpenAI','Y Combinator','Sequoia','Google for Startups','a16z','First Round'].map((name, i) => (
@@ -229,6 +230,7 @@ export default function Home() {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="bg-[#FBFB23] text-humn-purple px-8 py-3 rounded-full text-lg font-semibold shadow-lg" style={{ textShadow: '0 0 16px #FBFB23, 0 0 8px #FBFB23' }}
+                onClick={() => {window.open('https://tally.so/r/n9yXyX', '_blank')}}
               >
                 Join the waitlist
               </motion.button>
@@ -239,6 +241,7 @@ export default function Home() {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="bg-[#FBFB23] text-humn-purple px-8 py-3 rounded-full text-lg font-semibold shadow-lg" style={{ textShadow: '0 0 16px #FBFB23, 0 0 8px #FBFB23' }}
+                onClick={() => {window.open('https://tally.so/r/nG4Kje', '_blank')}}
               >
                 Support our next generation
               </motion.button>
