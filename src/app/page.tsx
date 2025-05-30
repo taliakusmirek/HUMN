@@ -47,7 +47,7 @@ export default function Home() {
           transition={{ duration: 0.8 }}
           className="w-full max-w-none mx-auto relative z-10 flex flex-col items-center justify-center"
         >
-          <h1 className="text-[12vw] font-bold -mt-20 mb-12 w-full tracking-tight leading-[0.95] text-transparent" style={{ WebkitTextStroke: '0.08em #FBFB23', textShadow: '0 0 32px #FBFB23, 0 0 8px #FBFB23' }}>HUMN</h1>
+          <h1 className="text-[12vw] font-bold -mt-20 mb-12 w-full tracking-tight leading-[0.95] text-transparent" style={{ WebkitTextStroke: '0.08em #FBFB23', textShadow: '0 0 1px #FBFB23' }}>HUMN</h1>
           <motion.button
             whileHover={{ scale: 1.08 }}
             whileTap={{ scale: 0.97 }}
@@ -113,7 +113,7 @@ export default function Home() {
           className="max-w-6xl mx-auto text-center relative z-10"
         >
           <div className="w-full pt-24 pb-16  flex-shrink-0 flex justify-center items-center">
-            <h2 className="text-[8vw] font-bold tracking-tight leading-[0.95] text-transparent whitespace-nowrap mx-auto" style={{ WebkitTextStroke: '0.08em #FBFB23', textShadow: '0 0 32px #FBFB23, 0 0 8px #FBFB23' }}>
+            <h2 className="text-[8vw] font-bold tracking-tight leading-[0.95] text-transparent whitespace-nowrap mx-auto" style={{ WebkitTextStroke: '0.08em #FBFB23', textShadow: '0 0 1px #FBFB23' }}>
               THE HUMN EXPERIENCE
             </h2>
           </div>
@@ -219,8 +219,138 @@ export default function Home() {
         </div>
       </section>
 
-       {/* Get Involved Section */}
-       <section className={"section bg-white text-humn-dark " + spaceGrotesk.className}>
+      {/* Location Cards Section */}
+      <section className={"section bg-white text-humn-dark " + spaceGrotesk.className}>
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl font-bold mb-12 text-humn-purple text-center">Choose Your Location</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 px-4">
+            {/* Cape Cod Card */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              className="bg-white rounded-2xl shadow-xl overflow-hidden border-2 border-[#FBFB23]"
+            >
+              <div className="relative h-64">
+                <Image src="/capecod.jpg" alt="Cape Cod" fill className="object-cover" />
+              </div>
+              <div className="p-6">
+                <h3 className="text-2xl font-bold text-humn-purple mb-2">Cape Cod, MA</h3>
+                <p className="text-lg mb-4">One Week Immersive Experience</p>
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="w-full bg-[#FBFB23] text-humn-purple px-6 py-3 rounded-full text-lg font-semibold shadow-lg"
+                  onClick={() => {window.open('https://tally.so/r/n9yXyX', '_blank')}}
+                >
+                  Apply Now
+                </motion.button>
+              </div>
+            </motion.div>
+
+            {/* Newport Card */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="bg-white rounded-2xl shadow-xl overflow-hidden border-2 border-[#FBFB23]"
+            >
+              <div className="relative h-64">
+                <Image src="/newport.jpeg" alt="Newport" fill className="object-cover" />
+              </div>
+              <div className="p-6">
+                <h3 className="text-2xl font-bold text-humn-purple mb-2">Newport, RI</h3>
+                <p className="text-lg mb-4">One Week Immersive Experience</p>
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="w-full bg-[#FBFB23] text-humn-purple px-6 py-3 rounded-full text-lg font-semibold shadow-lg"
+                  onClick={() => {window.open('https://tally.so/r/n9yXyX', '_blank')}}
+                >
+                  Apply Now
+                </motion.button>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className={"section bg-white text-humn-dark " + spaceGrotesk.className}>
+        <div className="max-w-4xl mx-auto px-4">
+          <h2 className="text-4xl font-bold mb-12 text-humn-purple text-center">Frequently Asked Questions</h2>
+          <div className="space-y-4">
+            {/* FAQ Item 1 */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              className="border-2 border-[#FBFB23] rounded-xl overflow-hidden"
+            >
+              <details className="group">
+                <summary className="flex justify-between items-center p-6 cursor-pointer bg-white hover:bg-[#FBFB23]/10 transition-colors">
+                  <h3 className="text-xl font-semibold text-humn-purple">Is this program paid for?</h3>
+                  <span className="transform group-open:rotate-180 transition-transform">
+                    <svg width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M6 9l6 6 6-6"/>
+                    </svg>
+                  </span>
+                </summary>
+                <div className="p-6 bg-white border-t-2 border-[#FBFB23]">
+                  <p className="text-lg">No, the program costs $1,500-$2,000 per person.</p>
+                </div>
+              </details>
+            </motion.div>
+
+            {/* FAQ Item 2 */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+              className="border-2 border-[#FBFB23] rounded-xl overflow-hidden"
+            >
+              <details className="group">
+                <summary className="flex justify-between items-center p-6 cursor-pointer bg-white hover:bg-[#FBFB23]/10 transition-colors">
+                  <h3 className="text-xl font-semibold text-humn-purple">Are scholarships available?</h3>
+                  <span className="transform group-open:rotate-180 transition-transform">
+                    <svg width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M6 9l6 6 6-6"/>
+                    </svg>
+                  </span>
+                </summary>
+                <div className="p-6 bg-white border-t-2 border-[#FBFB23]">
+                  <p className="text-lg">No, we do not currently offer scholarships.</p>
+                </div>
+              </details>
+            </motion.div>
+
+            {/* FAQ Item 3 */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="border-2 border-[#FBFB23] rounded-xl overflow-hidden"
+            >
+              <details className="group">
+                <summary className="flex justify-between items-center p-6 cursor-pointer bg-white hover:bg-[#FBFB23]/10 transition-colors">
+                  <h3 className="text-xl font-semibold text-humn-purple">Who should I contact if I need financial assistance?</h3>
+                  <span className="transform group-open:rotate-180 transition-transform">
+                    <svg width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M6 9l6 6 6-6"/>
+                    </svg>
+                  </span>
+                </summary>
+                <div className="p-6 bg-white border-t-2 border-[#FBFB23]">
+                  <p className="text-lg">Please contact <a href="mailto:kusmire@bc.edu" className="text-humn-purple hover:underline">kusmire@bc.edu</a> for any financial assistance inquiries.</p>
+                </div>
+              </details>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Get Involved Section */}
+      <section className={"section bg-white text-humn-dark " + spaceGrotesk.className}>
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-4xl font-bold mb-12 text-humn-purple">Get Involved</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
