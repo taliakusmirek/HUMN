@@ -26,21 +26,20 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section className="section bg-[#FBFB23] text-[#433CE3] text-left relative overflow-hidden p-0 min-h-[80vh] flex flex-col md:flex-row items-center justify-center -mt-8">
+      <section className="section bg-[#FBFB23] text-[#433CE3] text-left relative overflow-hidden p-0 min-h-[80vh] flex flex-col md:flex-row items-center justify-center -mt-20">
         <div className="relative z-10 flex-1 flex flex-col items-start justify-center pl-8 pt-4 md:pt-16">
           <h1 className="text-[15vw] font-extrabold uppercase tracking-tight leading-[0.95] mb-2" style={{letterSpacing: '-0.04em'}}>HUMN</h1>
-          <h2 className={playfair.className + " italic text-[2.5vw] font-normal mb-6"}>Boston&apos;s Launchpad for Women Building Radically Good Companies</h2>
-          <p className="text-xl max-w-xl mb-8">HUMN is more than a hacker house—it&apos;s a home, support system, and springboard for early-stage women and nonbinary founders building tech that matters.</p>
-          <div className="flex flex-row gap-4">
+          <h2 className={playfair.className + " italic text-[2vw] font-normal mb-6"}>Boston&apos;s founder circle for Gen Z women building bold startups in school (or just out).</h2>
+          <div className="flex flex-row gap-4 mt-8">
             <button
-              className="px-10 py-4 rounded-full text-lg font-bold border-4 border-[#433CE3] text-white bg-[#433CE3] mt-2 transition-colors duration-200 hover:bg-[#433CE3] hover:text-[#FBFB23] hover:border-[#FBFB23]"
+              className="px-10 py-4 rounded-full text-lg font-bold border-4 border-[#433CE3] text-white bg-[#433CE3] mt-2 transition-all duration-300 hover:shadow-lg hover:scale-105"
               style={{letterSpacing: '0.02em'}}
               onClick={() => {window.open('https://tally.so/r/n9yXyX', '_blank')}}
             >
               Apply
             </button>
             <button
-              className="px-10 py-4 rounded-full text-lg font-bold border-4 border-[#433CE3] text-[#433CE3] bg-white mt-2 transition-colors duration-200 hover:bg-[#433CE3] hover:text-[#FBFB23] hover:border-[#FBFB23]"
+              className="px-10 py-4 rounded-full text-lg font-bold border-4 border-[#433CE3] text-[#433CE3] bg-white mt-2 transition-all duration-300 hover:shadow-lg hover:scale-105"
               style={{letterSpacing: '0.02em'}}
               onClick={() => {window.open('https://lu.ma/calendar/cal-Zyqts4M5IQq9841', '_blank')}}
             >
@@ -68,16 +67,16 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Why Now Section */}
-      <section id="whynow" className="section bg-[#FBFB23] text-[#433CE3] text-left relative overflow-hidden flex flex-col items-center justify-center py-20">
+      {/* About HUMN Section */}
+      <section id="whynow" className="section text-[#433CE3] text-left relative overflow-hidden flex flex-col items-center justify-center py-20" style={{background: 'linear-gradient(180deg, #433CE3 0%, #433CE3 100%)'}}>
         <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-8">
           <div className="flex-1 flex flex-col items-start justify-center pl-4">
-            <h2 className="text-5xl md:text-7xl font-extrabold uppercase tracking-tight leading-[0.95] mb-6" style={{letterSpacing: '-0.04em'}}>WHY NOW</h2>
-            <p className={playfair.className + " italic text-2xl font-normal mb-6"}>
-              We believe mission-driven ventures deserve the same hustle, support, and intensity as the next unicorn. And that women should have a space to lead boldly, without compromise.
+            <h2 className="text-5xl md:text-7xl font-extrabold uppercase tracking-tight leading-[0.95] mb-6 text-white" style={{letterSpacing: '-0.04em'}}>ABOUT HUMN</h2>
+            <p className={playfair.className + " italic text-2xl font-normal mb-6 text-white"}>
+              HUMN is a founder circle for Gen Z women students and recent grads in Boston building for-profit startups. Whether you&apos;re pre-launch or post-pitch, we&apos;re the crew that helps you move faster, feel supported, and stay sane.
             </p>
-            <p className="text-xl max-w-xl mb-8">
-              Now is the time to build for impact. The world needs more women and nonbinary founders creating tech that matters—in healthcare, sustainability, education, and beyond.
+            <p className="text-xl max-w-xl mb-8 text-white">
+              This is your space if you&apos;re serious about building, but tired of feeling like the only girl in the room.
             </p>
           </div>
           <div className="flex-1 flex justify-center items-center">
@@ -87,15 +86,15 @@ export default function Home() {
       </section>
 
       {/* The HUMN Experience Section */}
-      <section id="program" className="section bg-[#FBFB23] text-[#433CE3] relative overflow-hidden min-h-[110vh] py-24 pb-[20px]">
+      <section id="program" className="section text-[#433CE3] relative overflow-hidden min-h-[110vh] py-24 pb-[20px]" style={{background: 'linear-gradient(180deg, #433CE3 0%, #433CE3 100%)'}}>
         {/* SVG Collage for Experience Section */}
         <span className="absolute top-12 left-1/4 w-24 -rotate-12 opacity-60 pointer-events-none" style={{zIndex:1}}>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#433CE3" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
         </span>
       
         <div className="max-w-6xl mx-auto text-center relative z-10">
           <div className="w-full pt-12 pb-8 flex-shrink-0 flex justify-center items-center">
-            <h2 className="text-[7vw] font-extrabold uppercase tracking-tight leading-[0.95] text-[#433CE3] whitespace-nowrap mx-auto mb-2" style={{letterSpacing: '-0.04em'}}>THE HUMN EXPERIENCE</h2>
+            <h2 className="text-[7vw] font-extrabold uppercase tracking-tight leading-[0.95] text-white whitespace-nowrap mx-auto mb-2" style={{letterSpacing: '-0.04em'}}>THE HUMN EXPERIENCE</h2>
           </div>
           {/* Horizontal scroll cards with images, hide scrollbar, arrow scrolls */}
           <div className="relative w-full mb-24">
@@ -103,33 +102,35 @@ export default function Home() {
             <button
               type="button"
               aria-label="Scroll left"
-              className="absolute -left-16 top-1/2 -translate-y-1/2 z-20 bg-[#FBFB23] border-2 border-[#433CE3] rounded-full p-2 shadow-lg hover:bg-[#433CE3] hover:text-[#FBFB23] transition-colors"
+              className="absolute -left-16 top-1/2 -translate-y-1/2 z-20 border-2 border-white rounded-full p-2 shadow-lg transition-all duration-300 hover:shadow-xl hover:scale-110"
+              style={{background: 'linear-gradient(135deg, #433CE3 0%, #5B52E8 100%)'}}
               onClick={() => {
                 const el = document.getElementById('experience-scroll');
                 if (el) el.scrollBy({ left: -400, behavior: 'smooth' });
               }}
             >
-              <svg width="32" height="32" fill="none" stroke="#433CE3" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></svg>
+              <svg width="32" height="32" fill="none" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></svg>
             </button>
             {/* Right arrow button - moved further out */}
             <button
               type="button"
               aria-label="Scroll right"
-              className="absolute -right-16 top-1/2 -translate-y-1/2 z-20 bg-[#FBFB23] border-2 border-[#433CE3] rounded-full p-2 shadow-lg hover:bg-[#433CE3] hover:text-[#FBFB23] transition-colors"
+              className="absolute -right-16 top-1/2 -translate-y-1/2 z-20 border-2 border-white rounded-full p-2 shadow-lg transition-all duration-300 hover:shadow-xl hover:scale-110"
+              style={{background: 'linear-gradient(135deg, #433CE3 0%, #5B52E8 100%)'}}
               onClick={() => {
                 const el = document.getElementById('experience-scroll');
                 if (el) el.scrollBy({ left: 400, behavior: 'smooth' });
               }}
             >
-              <svg width="32" height="32" fill="none" stroke="#433CE3" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg>
+              <svg width="32" height="32" fill="none" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg>
             </button>
             <div id="experience-scroll" className="flex gap-8 overflow-x-auto pb-4 snap-x snap-mandatory no-scrollbar w-full pl-2">
               {[
-                { title: "1-week Cohort in Boston", description: "A one-week immersive residency for mission-aligned founders in a beautiful Boston house.", img: "/exp1.jpg" },
-                { title: "Monthly Founder Meetings", description: "Ongoing monthly gatherings for deep connection, peer mentorship, and collaborative growth.", img: "/exp2.jpg" },
-                { title: "Expert Mentorship", description: "Access to leaders in healthtech, climate, AI, product, and ethics.", img: "/exp3.jpg" },
-                { title: "Demo Night + Public Showcase", description: "End your residency pitching to an invited audience of VCs and allies.", img: "/exp4.jpg" },
-                { title: "Wellness Programming", description: "Meditation, movement, and mental health support included because you can't pour from an empty cup.", img: "/exp5.jpg" }
+                { title: "💬 HUMN Circles", description: "Monthly accountability & connection sessions for real talk and support.", img: "/exp1.jpg" },
+                { title: "🛠️ Sprint Nights", description: "Co-working and testing in Boston IRL + dinner and good vibes.", img: "/exp2.jpg" },
+                { title: "🎤 Impact Nights", description: "Talks and panels with female leaders who keep it real.", img: "/exp3.jpg" },
+                { title: "🌊 Retreats", description: "Cape Cod weekends for strategy, bonding, and reset: perfect for students on break.", img: "/exp4.jpg" },
+                { title: "🌸 Built-In Wellness", description: "Movement, rest, and therapy-style convos: because we don't burn out here.", img: "/exp5.jpg" }
               ].map((item, index) => (
                 <div key={index} className="snap-center min-w-[340px] max-w-xs bg-white rounded-2xl shadow-xl p-6 flex flex-col items-center relative z-10 border-4 border-[#433CE3]">
                   <Image src={item.img} alt={item.title} width={160} height={160} className="w-40 h-40 object-cover rounded-xl mb-4 shadow-md border-2 border-[#FBFB23]" />
@@ -142,17 +143,15 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Who Should Apply Section */}
+      {/* Who It's For Section */}
       <section id="apply" className="section bg-white text-[#433CE3] text-left relative overflow-hidden">
         <div className="max-w-4xl mx-auto flex flex-col-reverse md:flex-row items-center gap-8 py-12">
           <div className="flex-1 flex flex-col items-start justify-center">
-            <h2 className="text-5xl md:text-7xl font-extrabold uppercase tracking-tight leading-[0.95] mb-8" style={{letterSpacing: '-0.04em'}}>WHO SHOULD APPLY?</h2>
+            <h2 className="text-5xl md:text-7xl font-extrabold uppercase tracking-tight leading-[0.95] mb-8" style={{letterSpacing: '-0.04em'}}>WHO IT&apos;S FOR</h2>
             <ul className={playfair.className + " italic list-disc list-inside text-xl space-y-4 pl-4 mb-4"}>
-              <li className="font-normal">Female-identifying or nonbinary founders</li>
-              <li className="font-normal">Early-stage or pre-seed: idea, MVP, or first users</li>
-              <li className="font-normal">Building in healthcare, sustainability, education, or social impact</li>
-              <li className="font-normal">Values-driven, collaborative, and bold</li>
-              <li className="font-normal">Students, recent grads, or self-taught welcome</li>
+              <li className="font-normal">Gen Z women & femme-identifying founders</li>
+              <li className="font-normal">Undergrad, recent grad, or early-stage</li>
+              <li className="font-normal">Working on a for-profit startup (or ready to start)</li>
             </ul>
           </div>
           <div className="flex-1 flex justify-center items-center">
@@ -251,37 +250,31 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Get Involved Section */}
+      {/* Join the inner circle Section */}
       <section className="section bg-[#FBFB23] text-[#433CE3]">
         <div className="max-w-6xl mx-auto text-center py-8">
-          <h2 className="text-5xl md:text-7xl font-extrabold uppercase tracking-tight leading-[0.95] mb-6" style={{letterSpacing: '-0.04em'}}>Get Involved</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <div className="flex flex-col items-center">
-              <h3 className={playfair.className + " italic text-2xl font-normal mb-4 text-[#433CE3]"}>Founders</h3>
+          <h2 className="text-5xl md:text-7xl font-extrabold uppercase tracking-tight leading-[0.95] mb-6" style={{letterSpacing: '-0.04em'}}>JOIN THE INNER CIRCLE</h2>
+          <p className={playfair.className + " italic text-2xl font-normal mb-8 text-[#433CE3]"}>Founder nights, retreats, honest convos, and demo showcases: all in Boston.</p>
+          <div className="flex flex-col items-center gap-6">
+            <div className="flex gap-4">
               <button
-                className="bg-white text-[#433CE3] border-4 border-[#433CE3] px-8 py-3 rounded-full text-lg font-bold shadow-lg transition-colors duration-200 hover:bg-[#433CE3] hover:text-[#FBFB23] hover:border-[#FBFB23]"
+                className="px-8 py-3 rounded-full text-lg font-bold border-4 border-[#433CE3] text-[#433CE3] bg-white transition-all duration-300 hover:shadow-lg hover:scale-105"
                 onClick={() => {window.open('https://tally.so/r/n9yXyX', '_blank')}}
               >
-                Apply
+                Join the Circle
               </button>
-            </div>
-            <div className="flex flex-col items-center">
-              <h3 className={playfair.className + " italic text-2xl font-normal mb-4 text-[#433CE3]"}>Mentors & Speakers</h3>
               <button
-                className="bg-white text-[#433CE3] border-4 border-[#433CE3] px-8 py-3 rounded-full text-lg font-bold shadow-lg transition-colors duration-200 hover:bg-[#433CE3] hover:text-[#FBFB23] hover:border-[#FBFB23]"
+                className="px-8 py-3 rounded-full text-lg font-bold border-4 border-[#433CE3] text-[#433CE3] bg-white transition-all duration-300 hover:shadow-lg hover:scale-105"
                 onClick={() => {window.open('https://tally.so/r/nG4Kje', '_blank')}}
               >
                 Support our next generation
               </button>
             </div>
-            <div className="flex flex-col items-center">
-              <h3 className={playfair.className + " italic text-2xl font-normal mb-4 text-[#433CE3]"}>Funders</h3>
-              <button
-                className="bg-white text-[#433CE3] border-4 border-[#433CE3] px-8 py-3 rounded-full text-lg font-bold shadow-lg transition-colors duration-200 hover:bg-[#433CE3] hover:text-[#FBFB23] hover:border-[#FBFB23]"
-              >
-                Help make this house a reality
-              </button>
-            </div>
+            <button
+              className="px-8 py-3 rounded-full text-lg font-bold border-4 border-[#433CE3] text-[#433CE3] bg-white transition-all duration-300 hover:shadow-lg hover:scale-105"
+            >
+              Help make this house a reality
+            </button>
           </div>
         </div>
       </section>
