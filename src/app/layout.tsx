@@ -6,7 +6,7 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'HUMN - Women Focused but Open to All',
+  title: 'HUMN - FOR BOSTON\'S GEN Z WOMEN',
   description: 'A mission-driven venture studio focused on empowering women entrepreneurs',
 }
 
